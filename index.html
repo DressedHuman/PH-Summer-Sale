@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Sale Landing Page</title>
+    <!-- daisyUi and tailwindCSS scripts -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- work sans google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 
     <!-- custom css styles -->
     <style>
@@ -24,22 +28,166 @@
     </style>
 </head>
 
-<body class="font-work-sans">
-    <!-- banner section -->
-    <header class="bg-[#F9F6E2] px-3 md:px-7 lg:px-20 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 justify-around items-center">
+<body class="font-work-sans bg-[#F8F8F8]">
+    <!-- banner section begin -->
+    <header
+        class="bg-[#F9F6E2] px-3 md:px-7 lg:px-20 py-5 md:py-7 lg:py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 justify-around items-center">
         <div class="text-center">
-            <p class="text-xl lg:text-3xl font-medium text-[var(--black-color)] mb-5 md:mb-7 lg:mb-11">---SALE FEVER---</p>
-            <h1 class="text-[var(--black-color)] text-3xl md:text-4xl lg:text-6xl font-bold lg:w-[703px] mx-4 md:mx-auto lg:mx-auto mb-5 md:mb-7 lg:mb-16">Purchase TK 200 or above & get <span class="text-[var(--pink-color)]">20% off</span></h1>
+            <p class="text-xl lg:text-3xl font-medium text-[var(--black-color)] mb-5 md:mb-7 lg:mb-11">---SALE FEVER---
+            </p>
+            <h1
+                class="text-[var(--black-color)] text-3xl md:text-4xl lg:text-6xl font-bold lg:w-[703px] mx-4 md:mx-auto lg:mx-auto mb-5 md:mb-7 lg:mb-16">
+                Purchase TK 200 or above & get <span class="text-[var(--pink-color)]">20% off</span></h1>
 
             <div class="grid grid-cols-2 justify-around items-center gap-2 md:gap-4 lg:gap-4">
                 <p class="text-xl lg:text-2xl font-medium text-[var(--black-color)]">Use Promo Code</p>
-                <p class="text-xl lg:text-2xl px-3 lg:px-6 py-2 lg:py-4 text-white bg-[var(--pink-color)] rounded-lg">SELL200</p>
+                <p class="text-xl lg:text-2xl px-3 lg:px-6 py-2 lg:py-4 text-white bg-[var(--pink-color)] rounded-lg">
+                    SELL200</p>
             </div>
         </div>
         <div>
             <img src="images/Summer 1.png" alt="" srcset="">
         </div>
     </header>
+    <!-- banner section end -->
+
+    <!-- products sections begin -->
+    <section>
+        <div class="flex mx-5 md:mx-7 lg:mx-12">
+            <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                <!-- kitchenware section -->
+                <div>
+                    <h3 class="font-semibold text-4xl text-[var(--black-color)] mb-8 text-left mt-32">Kitchenware</h3>
+
+                    <!-- cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- card-1 -->
+                        <div class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
+                            <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
+                                <img src="images/prod1.png" class="h-full" />
+                            </div>
+                            <div class="card-body">
+                                <div class="rating rating-lg mx-auto">
+                                    <input type="radio" name="rating-9" class="rating-hidden" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                </div>
+                                <h2 class="text-xl font-semibold text-[var(--black)]">K. Accessories</h2>
+                                <p class="text-xl text-[#11111180]">39.00 TK</p>
+                            </div>
+                        </div>
+
+                        <!-- card-2 -->
+                        <div class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
+                            <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
+                                <img src="images/prod2.png" class="h-full" />
+                            </div>
+                            <div class="card-body">
+                                <div class="rating rating-lg mx-auto">
+                                    <input type="radio" name="rating-9" class="rating-hidden" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                </div>
+                                <h2 class="text-xl font-semibold text-[var(--black)]">K. Accessories</h2>
+                                <p class="text-xl text-[#11111180]">25.00 TK</p>
+                            </div>
+                        </div>
+
+                        <!-- card-3 -->
+                        <div class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
+                            <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
+                                <img src="images/prod3.png" class="h-full" />
+                            </div>
+                            <div class="card-body">
+                                <div class="rating rating-lg mx-auto">
+                                    <input type="radio" name="rating-9" class="rating-hidden" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                </div>
+                                <h2 class="text-xl font-semibold text-[var(--black)]">Home Cooker</h2>
+                                <p class="text-xl text-[#11111180]">49.00 TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- kitchenware section -->
+                <div>
+                    <h3 class="font-semibold text-4xl text-[var(--black-color)] mb-8 text-left mt-14">Sportswear</h3>
+
+                    <!-- cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <!-- card-1 -->
+                        <div class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
+                            <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
+                                <img src="images/prod4.png" class="h-full" />
+                            </div>
+                            <div class="card-body">
+                                <div class="rating rating-lg mx-auto">
+                                    <input type="radio" name="rating-9" class="rating-hidden" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                </div>
+                                <h2 class="text-xl font-semibold text-[var(--black)]">K. Accessories</h2>
+                                <p class="text-xl text-[#11111180]">39.00 TK</p>
+                            </div>
+                        </div>
+
+                        <!-- card-2 -->
+                        <div class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
+                            <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
+                                <img src="images/prod5.png" class="h-full" />
+                            </div>
+                            <div class="card-body">
+                                <div class="rating rating-lg mx-auto">
+                                    <input type="radio" name="rating-9" class="rating-hidden" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                </div>
+                                <h2 class="text-xl font-semibold text-[var(--black)]">K. Accessories</h2>
+                                <p class="text-xl text-[#11111180]">25.00 TK</p>
+                            </div>
+                        </div>
+
+                        <!-- card-3 -->
+                        <div class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
+                            <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
+                                <img src="images/prod6.png" class="h-full" />
+                            </div>
+                            <div class="card-body">
+                                <div class="rating rating-lg mx-auto">
+                                    <input type="radio" name="rating-9" class="rating-hidden" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" checked />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                                </div>
+                                <h2 class="text-xl font-semibold text-[var(--black)]">Home Cooker</h2>
+                                <p class="text-xl text-[#11111180]">49.00 TK</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- products sections end -->
 </body>
 
 </html>
