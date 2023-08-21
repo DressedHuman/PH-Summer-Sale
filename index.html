@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Summer Sale Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- work sans google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- custom css styles -->
+    <style>
+        .font-work-sans {
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        :root {
+            --pink-color: #E527B2;
+            --black-color: #111;
+        }
+    </style>
 </head>
-<body>
+
+<body class="font-work-sans">
+    <!-- banner section -->
+    <header class="bg-[#F9F6E2] px-3 md:px-7 lg:px-20 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 justify-around items-center">
+        <div class="text-center">
+            <p class="text-xl lg:text-3xl font-medium text-[var(--black-color)] mb-5 md:mb-7 lg:mb-11">---SALE FEVER---</p>
+            <h1 class="text-[var(--black-color)] text-3xl md:text-4xl lg:text-6xl font-bold lg:w-[703px] mx-4 md:mx-auto lg:mx-auto mb-5 md:mb-7 lg:mb-16">Purchase TK 200 or above & get <span class="text-[var(--pink-color)]">20% off</span></h1>
+
+            <div class="grid grid-cols-2 justify-around items-center gap-2 md:gap-4 lg:gap-4">
+                <p class="text-xl lg:text-2xl font-medium text-[var(--black-color)]">Use Promo Code</p>
+                <p class="text-xl lg:text-2xl px-3 lg:px-6 py-2 lg:py-4 text-white bg-[var(--pink-color)] rounded-lg">SELL200</p>
+            </div>
+        </div>
+        <div>
+            <img src="images/Summer 1.png" alt="" srcset="">
+        </div>
+    </header>
 </body>
+
 </html>
