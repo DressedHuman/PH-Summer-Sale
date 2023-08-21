@@ -29,165 +29,217 @@
 </head>
 
 <body class="font-work-sans bg-[#F8F8F8]">
-    <!-- banner section begin -->
-    <header
-        class="bg-[#F9F6E2] px-3 md:px-7 lg:px-20 py-5 md:py-7 lg:py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 justify-around items-center">
-        <div class="text-center">
-            <p class="text-xl lg:text-3xl font-medium text-[var(--black-color)] mb-5 md:mb-7 lg:mb-11">---SALE FEVER---
-            </p>
-            <h1
-                class="text-[var(--black-color)] text-3xl md:text-4xl lg:text-6xl font-bold lg:w-[703px] mx-4 md:mx-auto lg:mx-auto mb-5 md:mb-7 lg:mb-16">
-                Purchase TK 200 or above & get <span class="text-[var(--pink-color)]">20% off</span></h1>
+    <main>
+        <!-- banner section begin -->
+        <header
+            class="bg-[#F9F6E2] px-3 md:px-7 lg:px-20 py-5 md:py-7 lg:py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 justify-around items-center">
+            <div class="text-center">
+                <p class="text-xl lg:text-3xl font-medium text-[var(--black-color)] mb-5 md:mb-7 lg:mb-11">---SALE
+                    FEVER---
+                </p>
+                <h1
+                    class="text-[var(--black-color)] text-3xl md:text-4xl lg:text-6xl font-bold lg:w-[703px] mx-4 md:mx-auto lg:mx-auto mb-5 md:mb-7 lg:mb-16">
+                    Purchase TK 200 or above & get <span class="text-[var(--pink-color)]">20% off</span></h1>
 
-            <div class="grid grid-cols-2 justify-around items-center gap-2 md:gap-4 lg:gap-4">
-                <p class="text-xl lg:text-2xl font-medium text-[var(--black-color)]">Use Promo Code</p>
-                <p class="text-xl lg:text-2xl px-3 lg:px-6 py-2 lg:py-4 text-white bg-[var(--pink-color)] rounded-lg">
-                    SELL200</p>
+                <div class="grid grid-cols-2 justify-around items-center gap-2 md:gap-4 lg:gap-4">
+                    <p class="text-xl lg:text-2xl font-medium text-[var(--black-color)]">Use Promo Code</p>
+                    <p
+                        class="text-xl lg:text-2xl px-3 lg:px-6 py-2 lg:py-4 text-white bg-[var(--pink-color)] rounded-lg">
+                        SELL200</p>
+                </div>
             </div>
-        </div>
-        <div>
-            <img src="images/Summer 1.png" alt="" srcset="">
-        </div>
-    </header>
-    <!-- banner section end -->
+            <div>
+                <img src="images/Summer 1.png" alt="" srcset="">
+            </div>
+        </header>
+        <!-- banner section end -->
 
-    <!-- products sections begin -->
-    <section>
-        <div class="flex mx-5 md:mx-7 lg:mx-12">
-            <div class="col-span-1 md:col-span-2 lg:col-span-3">
-                <!-- kitchenware section -->
-                <div>
-                    <h3 class="font-semibold text-4xl text-[var(--black-color)] mb-8 text-left mt-32">Kitchenware</h3>
+        <!-- products sections begin -->
+        <section class="mb-5 md:mb-7 lg:mb-12">
+            <div class="flex mx-5 md:mx-7 lg:mx-12 gap-6">
+                <!-- products section -->
+                <div class="col-span-1 md:col-span-2 lg:col-span-3">
+                    <!-- kitchenware section -->
+                    <div>
+                        <h3 class="font-semibold text-4xl text-[var(--black-color)] mb-8 text-left mt-32">Kitchenware
+                        </h3>
 
-                    <!-- cards -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- card-1 -->
-                        <div class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
-                            <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
-                                <img src="images/prod1.png" class="h-full" />
-                            </div>
-                            <div class="card-body">
-                                <div class="rating rating-lg mx-auto">
-                                    <input type="radio" name="rating-9" class="rating-hidden" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" checked />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                        <!-- cards -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- card-1 -->
+                            <div id="product_1" class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
+                                <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
+                                    <img src="images/prod1.png" class="h-full" />
                                 </div>
-                                <h2 class="text-xl font-semibold text-[var(--black)]">K. Accessories</h2>
-                                <p class="text-xl text-[#11111180]">39.00 TK</p>
+                                <div class="card-body">
+                                    <div class="rating rating-lg mx-auto">
+                                        <input type="radio" name="product_1_rating" class="rating-hidden" onclick="event.stopPropagation();" />
+                                        <input type="radio" name="product_1_rating" class="mask mask-star-2 bg-[#FFC107]" onclick="event.stopPropagation();" />
+                                        <input type="radio" name="product_1_rating" class="mask mask-star-2 bg-[#FFC107]" onclick="event.stopPropagation();"
+                                            checked />
+                                        <input type="radio" name="product_1_rating" class="mask mask-star-2 bg-[#FFC107]" onclick="event.stopPropagation();" />
+                                        <input type="radio" name="product_1_rating" class="mask mask-star-2 bg-[#FFC107]" onclick="event.stopPropagation();" />
+                                        <input type="radio" name="product_1_rating" class="mask mask-star-2 bg-[#FFC107]" onclick="event.stopPropagation();" />
+                                    </div>
+                                    <h2 class="text-xl font-semibold text-[var(--black)]">K. Accessories</h2>
+                                    <p class="text-xl text-[#11111180]">39.00 TK</p>
+                                </div>
+                            </div>
+
+                            <!-- card-2 -->
+                            <div id="product_2" class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
+                                <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
+                                    <img src="images/prod2.png" class="h-full" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="rating rating-lg mx-auto">
+                                        <input type="radio" name="product_2_rating" class="rating-hidden" onclick="event.stopPropagation();" />
+                                        <input type="radio" name="product_2_rating" class="mask mask-star-2 bg-[#FFC107]" onclick="event.stopPropagation();" />
+                                        <input type="radio" name="product_2_rating" class="mask mask-star-2 bg-[#FFC107]" onclick="event.stopPropagation();"
+                                            checked />
+                                        <input type="radio" name="product_2_rating" class="mask mask-star-2 bg-[#FFC107]" onclick="event.stopPropagation();" />
+                                        <input type="radio" name="product_2_rating" class="mask mask-star-2 bg-[#FFC107]" onclick="event.stopPropagation();" />
+                                        <input type="radio" name="product_2_rating" class="mask mask-star-2 bg-[#FFC107]" onclick="event.stopPropagation();" />
+                                    </div>
+                                    <h2 class="text-xl font-semibold text-[var(--black)]">K. Accessories</h2>
+                                    <p class="text-xl text-[#11111180]">25.00 TK</p>
+                                </div>
+                            </div>
+
+                            <!-- card-3 -->
+                            <div id="product_3" class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
+                                <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
+                                    <img src="images/prod3.png" class="h-full" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="rating rating-lg mx-auto">
+                                        <input type="radio" name="product_3_rating" onclick="event.stopPropagation();" class="rating-hidden" />
+                                        <input type="radio" name="product_3_rating" onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="product_3_rating" onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]"
+                                            checked />
+                                        <input type="radio" name="product_3_rating" onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="product_3_rating" onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="product_3_rating" onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                    </div>
+                                    <h2 class="text-xl font-semibold text-[var(--black)]">Home Cooker</h2>
+                                    <p class="text-xl text-[#11111180]">49.00 TK</p>
+                                </div>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- card-2 -->
-                        <div class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
-                            <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
-                                <img src="images/prod2.png" class="h-full" />
-                            </div>
-                            <div class="card-body">
-                                <div class="rating rating-lg mx-auto">
-                                    <input type="radio" name="rating-9" class="rating-hidden" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" checked />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                </div>
-                                <h2 class="text-xl font-semibold text-[var(--black)]">K. Accessories</h2>
-                                <p class="text-xl text-[#11111180]">25.00 TK</p>
-                            </div>
-                        </div>
+                    <!-- Sportswear section -->
+                    <div>
+                        <h3 class="font-semibold text-4xl text-[var(--black-color)] mb-8 text-left mt-14">Sportswear
+                        </h3>
 
-                        <!-- card-3 -->
-                        <div class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
-                            <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
-                                <img src="images/prod3.png" class="h-full" />
-                            </div>
-                            <div class="card-body">
-                                <div class="rating rating-lg mx-auto">
-                                    <input type="radio" name="rating-9" class="rating-hidden" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" checked />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
+                        <!-- cards -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                            <!-- card-4 -->
+                            <div id="product_4" class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
+                                <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
+                                    <img src="images/prod4.png" class="h-full" />
                                 </div>
-                                <h2 class="text-xl font-semibold text-[var(--black)]">Home Cooker</h2>
-                                <p class="text-xl text-[#11111180]">49.00 TK</p>
+                                <div class="card-body">
+                                    <div class="rating rating-lg mx-auto">
+                                        <input type="radio" name="product_4_rating" onclick="event.stopPropagation();" class="rating-hidden" />
+                                        <input type="radio" name="product_4_rating" onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="product_4_rating" onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]"
+                                            checked />
+                                        <input type="radio" name="product_4_rating" onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="product_4_rating" onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="product_4_rating" onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                    </div>
+                                    <h2 class="text-xl font-semibold text-[var(--black)]">Sports Back Cap</h2>
+                                    <p class="text-xl text-[#11111180]">49.00 TK</p>
+                                </div>
+                            </div>
+
+                            <!-- card-5 -->
+                            <div id="product_5" class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
+                                <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
+                                    <img src="images/prod5.png" class="h-full" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="rating rating-lg mx-auto">
+                                        <input type="radio" name="product_5_rating" onclick="event.stopPropagation();" class="rating-hidden" />
+                                        <input type="radio" name="product_5_rating" onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="product_5_rating" onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]"
+                                            checked />
+                                        <input type="radio" name="product_5_rating" onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="product_5_rating" onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="product_5_rating" onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                    </div>
+                                    <h2 class="text-xl font-semibold text-[var(--black)]">Full Jersey Set</h2>
+                                    <p class="text-xl text-[#11111180]">69.00 TK</p>
+                                </div>
+                            </div>
+
+                            <!-- card-6 -->
+                            <div id="product_6" class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
+                                <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
+                                    <img src="images/prod6.png" class="h-full" />
+                                </div>
+                                <div class="card-body">
+                                    <div class="rating rating-lg mx-auto">
+                                        <input type="radio" name="product_6_rating"
+                                        onclick="event.stopPropagation();" class="rating-hidden" />
+                                        <input type="radio" name="product_6_rating"
+                                        onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="product_6_rating"
+                                        onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]"
+                                            checked />
+                                        <input type="radio" name="product_6_rating"
+                                        onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="product_6_rating"
+                                        onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                        <input type="radio" name="product_6_rating"
+                                        onclick="event.stopPropagation();" class="mask mask-star-2 bg-[#FFC107]" />
+                                    </div>
+                                    <h2 class="text-xl font-semibold text-[var(--black)]">Sports cates</h2>
+                                    <p class="text-xl text-[#11111180]">159.00 TK</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- kitchenware section -->
+                <!-- cart and coupon section -->
                 <div>
-                    <h3 class="font-semibold text-4xl text-[var(--black-color)] mb-8 text-left mt-14">Sportswear</h3>
-
-                    <!-- cards -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- card-1 -->
-                        <div class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
-                            <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
-                                <img src="images/prod4.png" class="h-full" />
-                            </div>
-                            <div class="card-body">
-                                <div class="rating rating-lg mx-auto">
-                                    <input type="radio" name="rating-9" class="rating-hidden" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" checked />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                </div>
-                                <h2 class="text-xl font-semibold text-[var(--black)]">K. Accessories</h2>
-                                <p class="text-xl text-[#11111180]">39.00 TK</p>
-                            </div>
+                    <!-- coupon section -->
+                    <div class="mt-[200px] rounded-lg w-[300px] p-6 bg-[#FFF]">
+                        <h3 class="font-medium text-2xl text-[var(--black-color)]">Have coupon?</h3>
+                        <div class="border rounded-xl flex">
+                            <input type="text" name="" id="" class="p-4 w-9/12 rounded-tl-xl rounded-bl-xl"
+                                placeholder="Coupon code">
+                            <button id="btn-apply-coupon" class="text-white bg-[var(--pink-color)] hover:bg-sky-700 flex-1 rounded-tr-xl rounded-br-xl"
+                                disabled>Apply</button>
                         </div>
+                    </div>
 
-                        <!-- card-2 -->
-                        <div class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
-                            <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
-                                <img src="images/prod5.png" class="h-full" />
-                            </div>
-                            <div class="card-body">
-                                <div class="rating rating-lg mx-auto">
-                                    <input type="radio" name="rating-9" class="rating-hidden" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" checked />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                </div>
-                                <h2 class="text-xl font-semibold text-[var(--black)]">K. Accessories</h2>
-                                <p class="text-xl text-[#11111180]">25.00 TK</p>
-                            </div>
-                        </div>
+                    <!-- cart section -->
+                    <div id="carts" class="bg-white mt-6 p-6 rounded-xl">
+                        <div id="cart-items"></div>
+                        <hr>
+                        <div id="cart-info" class="mt-4">
+                            <h3 class="text-[var(--black-color)] font-medium text-2xl mb-4">Total price: <span
+                                    class="text-[#11111180]"><span id="price-total">00</span>TK</span></h3>
 
-                        <!-- card-3 -->
-                        <div class="card card-compact w-[300px] bg-base-100 shadow-xl text-center">
-                            <div class="m-5 bg-[#11111113] py-8 rounded-lg h-52 grid justify-center">
-                                <img src="images/prod6.png" class="h-full" />
-                            </div>
-                            <div class="card-body">
-                                <div class="rating rating-lg mx-auto">
-                                    <input type="radio" name="rating-9" class="rating-hidden" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" checked />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                    <input type="radio" name="rating-9" class="mask mask-star-2 bg-[#FFC107]" />
-                                </div>
-                                <h2 class="text-xl font-semibold text-[var(--black)]">Home Cooker</h2>
-                                <p class="text-xl text-[#11111180]">49.00 TK</p>
-                            </div>
+                            <h3 class="text-[var(--black-color)] font-medium text-2xl mb-4">Discount: <span
+                                    class="text-[#11111180]"><span id="discount">00</span>TK</span></h3>
+
+                            <h3 class="text-[var(--black-color)] font-medium text-2xl">Total: <span
+                                    class="text-[#11111180]"><span id="total">00</span>TK</span></h3>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- products sections end -->
+        </section>
+        <!-- products sections end -->
+    </main>
+
+    <!-- scripts -->
+    <script src="js/addToCart.js"></script>
 </body>
 
 </html>
