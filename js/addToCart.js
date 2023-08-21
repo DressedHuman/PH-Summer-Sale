@@ -10,10 +10,14 @@ function addToCartItem(productName){
     cart.appendChild(newItem);
 };
 
+// fixed numbers after decimal point in floating number
+function toFixed(value, count){
+    return parseFloat(value.toFixed(count))
+}
 // new value counter: helper function for the addToCartPrice function
 function addValue(prevValue, newValue){
     value = parseFloat(prevValue) + parseFloat(newValue);
-    return parseFloat(value.toFixed(2));
+    return toFixed(value, 2);
 }
 
 // helper function to adjust the price
@@ -22,8 +26,13 @@ function addToCartPrice(productPrice){
     const priceTotal = document.getElementById("price-total");
     const newPriceTotal = addValue(priceTotal.innerText, productPrice);
     priceTotal.innerText = newPriceTotal;
+
+    // if the new total price greater than 0, then enable the "Make Purchase" button and if greater than or equal to 200, then enable the "Apply" button for the coupon code also.
     if(newPriceTotal >=200){
+        document.getElementById("make-purchase").removeAttribute("disabled");
         document.getElementById("btn-apply-coupon").removeAttribute("disabled");
+    }else if(newPriceTotal > 0){
+        document.getElementById("make-purchase").removeAttribute("disabled");
     }
 
     // setting the total price with the discount counted
@@ -61,10 +70,36 @@ for(const key of keys){
     });
 };
 
-/* document.getElementById("product-1").addEventListener("click", function(){
-    addToCart("K. Accessories", 39);
-}, true); */
 
+// adding event listener to the apply coupon button
 document.getElementById("btn-apply-coupon").addEventListener("click", function(){
-    alert("apply button clicked");
+    const couponTyped = document.getElementById("typed-coupon");
+    const couponCode = couponTyped.value;
+
+    couponTyped.value = "";
+    if(couponCode === ""){
+        alert("You must type a valid coupon code");
+    }else if(couponCode === "SELL200"){
+        const totalPrice = document.getElementById("price-total");
+        const discount = document.getElementById("discount");
+        const total = document.getElementById("total");
+
+
+        // counting available discount
+        let available_discount = parseFloat(totalPrice.innerText) * 20 / 100;
+        
+        // adjusting the discount
+        discount.innerText = toFixed(available_discount, 2);
+        total.innerText = toFixed((parseFloat(total.innerText) - available_discount), 2);
+    }else{
+        alert("Your coupon was incorrect! If you're trying to hack the server, we'll call the Police!");
+    }
+
+
+});
+
+
+// adding event listener to the "Go Home" button
+document.getElementById("go-home").addEventListener("click", function(){
+    window.location.reload();
 })
